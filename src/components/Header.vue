@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .logo_img{

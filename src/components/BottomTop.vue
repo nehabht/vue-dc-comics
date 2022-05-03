@@ -1,7 +1,7 @@
 <template>
     <div class="footer_top">
         <div class="container80">
-          <div class="row">
+          <div class="row flex_between">
              <div class="col">
                <div class="col-4">
                  <h4>DC COMICS</h4>
@@ -52,7 +52,7 @@
                </div>
 
              </div>
-            <div class="col">
+            <div class="col flex_end">
               <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
           </div>
@@ -64,6 +64,9 @@
 <style lang="scss" scoped>
 //footer top
 
+.flex_end{
+  justify-content: flex-end;
+}
 
 
 .footer_top{
