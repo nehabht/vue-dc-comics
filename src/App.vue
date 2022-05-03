@@ -8,68 +8,7 @@
     <buySectionComponent />
 
     <footer>
-      <div class="footer_top">
-        <div class="container80">
-          <div class="row">
-             <div class="col">
-               <div class="col-4">
-                 <h4>DC COMICS</h4>
-                 <section>
-                   <ul>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                   </ul>
-                 </section>
-                 <h4>SHOP</h4>
-                 <section>
-                   <ul>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                   </ul>
-
-                 </section>
-               </div>
-               <div class="col-4">
-                 <h4>DC</h4>
-                 <section>
-                   <ul>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                   </ul>
-                 </section>
-               </div>
-               <div class="col-4">
-                 <h4>SITES</h4>
-                 <section>
-                   <ul>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                      <li>lorem</li>
-                   </ul>
-                 </section>
-               </div>
-
-             </div>
-            <div class="col">
-              <img src="./assets/img/dc-logo-bg.png" alt="">
-            </div>
-          </div>
-        </div>
-       
-
-      </div>
-
+      <bottomTopComponent />
       <div class="footer_bottom"></div>
     </footer>
 
@@ -81,11 +20,13 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import headerComponent from './components/Header.vue'
 import buySectionComponent from './components/BuySection.vue'
+import bottomTopComponent from './components/BottomTop.vue'
 export default {
   name: 'App',
   components: {
     headerComponent,
     buySectionComponent,
+    bottomTopComponent,
 
 
   }
@@ -134,47 +75,6 @@ main{
   height: 100px;
   color: white;
 }
-
-//footer top
-
-
-
-.footer_top{
-  width: inherit;
-  height: 400px;
-  background-image: url(./assets/img/footer-bg.jpg);
-
-  color: white;
-  display: flex;
-
-    .col{
-      display: flex;
-      width: 50%;
-      flex-grow: 1;
-
-        img{
-          height: 400px;
-
-        }
-         .col-4{
-          padding-top: 1rem ;
-          width: 25%;
-        }
-    }
-}
-
-h4{
-  margin: 1rem 0;
-}
-
-ul{
-  list-style: none;
-}
-li{
-  font-size: 10px;
-  color: lightgray
-}
-
 
 
 </style>
