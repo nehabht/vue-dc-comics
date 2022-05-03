@@ -19,18 +19,14 @@
 </template>
 
 <style lang="scss" scoped>
-.container80{
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 1rem;
-
-}
 
 .navbar{
   height: 100px;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .logo_img{
