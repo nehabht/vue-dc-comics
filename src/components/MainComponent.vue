@@ -1,16 +1,20 @@
 <template>
-    <div class="container80">
-        <div class="btn">
-            <button class="btn_current">CURRENT SERIES</button>
-        </div>
-        <div class="row covers">
-            <cover v-for="element in comics" :key="element.index" :coverImage="element.thumb" :coverTitle="element.series.toUpperCase()" />
+    <div>
+        <div class="jumbo"></div>
 
-        </div>
-        <div class="btn">
-            <button class="btn_more">LOAD MORE</button>
+        <div class="container80">
+            <div class="btn">
+                <button class="btn_current">CURRENT SERIES</button>
+            </div>
+            <div class="row covers">
+                <cover v-for="element in comics" :key="element.index" :coverImage="element.thumb" :coverTitle="element.series.toUpperCase()" />
+            </div>
+            <div class="btn">
+                <button class="btn_more">LOAD MORE</button>
+            </div>
         </div>
     </div>
+
 </template>
 
 <script>
@@ -105,6 +109,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.jumbo{
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .covers{
     margin-top: 3rem
 }
@@ -132,13 +143,13 @@ export default {
         background-color: #0282F9;
         color:white;
         background-color: #0282F9;
-        padding: 7px 25px;
+        padding: 10px 25px;
         border: none;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 1rem;
         position: absolute;
-        top: -15px;
+        top: 35%;
         left: 10%
     }
 
