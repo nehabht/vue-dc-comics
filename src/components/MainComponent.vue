@@ -1,11 +1,14 @@
 <template>
     <div class="container80">
+        <div class="btn">
+            <button class="btn_current">CURRENT SERIES</button>
+        </div>
         <div class="row covers">
             <cover v-for="element in comics" :key="element.index" :coverImage="element.thumb" :coverTitle="element.series.toUpperCase()" />
 
         </div>
         <div class="btn">
-            <button>LOAD MORE</button>
+            <button class="btn_more">LOAD MORE</button>
         </div>
     </div>
 </template>
@@ -114,11 +117,29 @@ export default {
     justify-content: center;
     align-items: center;
 
-    button{
+    .btn_more{
         color:white;
-        background-color: aquamarine;
-        padding: 1rem;
+        background-color: #0282F9;
+        padding: 7px 35px;
+        border: none;
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 1rem;
     
+    }
+
+    .btn_current{
+        background-color: #0282F9;
+        color:white;
+        background-color: #0282F9;
+        padding: 7px 25px;
+        border: none;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 1rem;
+        position: absolute;
+        top: -15px;
+        left: 10%
     }
 
 }
