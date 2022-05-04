@@ -42,6 +42,10 @@
 
 }
 
+.buy_section{
+  background-color: #0282F9;
+}
+
 .card_buy{
   display: flex;
   flex-direction: row;

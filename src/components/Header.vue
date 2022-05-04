@@ -48,7 +48,7 @@ li{
 }
 
 .active{
-  color: blue;
+  color: #0282F9;
 
 }
 

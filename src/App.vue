@@ -8,26 +8,8 @@
     <buySectionComponent />
 
     <footer>
-      <bottomTopComponent />
-      <div class="footer_bottom">
-        <div class="container80">
-          <div class="row flex_between">
-            <div class="sign_up">SIGN-UP NOW!</div>
-            <div class="social row">
-              <div class="follow"> FOLLOW US</div>
-              <div>
-                <img src="./assets/img/footer-facebook.png" alt="">
-                <img src="./assets/img/footer-twitter.png" alt="">
-                <img src="./assets/img/footer-youtube.png" alt="">
-                <img src="./assets/img/footer-pinterest.png" alt="">
-                <img src="./assets/img/footer-periscope.png" alt="">
-                
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
+      <footerTopComponent />
+      <footerBottomComponent />
     </footer>
 
   </div>
@@ -38,13 +20,15 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import headerComponent from './components/Header.vue'
 import buySectionComponent from './components/BuySection.vue'
-import bottomTopComponent from './components/BottomTop.vue'
+import footerTopComponent from './components/FooterTop.vue'
+import footerBottomComponent from './components/FooterBottom.vue'
 export default {
   name: 'App',
   components: {
     headerComponent,
     buySectionComponent,
-    bottomTopComponent,
+    footerTopComponent,
+    footerBottomComponent,
 
 
   }
@@ -88,9 +72,6 @@ export default {
   justify-content: space-between;
 }
 
-.buy_section{
-  background-color: #2c3e50;
-}
 //main
 
 main{
@@ -100,38 +81,5 @@ main{
   color: white;
   flex: 1
 }
-
-//footer bottom
-.footer_bottom{
-  background-color: #2c3e50;
-  color:white;
-  height: 90px;
-  display: flex;
-  align-items: center;
-}
-
-.sign_up{
-  padding: 8px;
-  border: 1px solid blue;
-  font-size: 12px;
-  font-weight:800;
-}
-
-.follow{
-  margin-right: 20px;
-  font-size: 12px;
-  font-weight:800;
-}
-
-.social{
-    display: flex;
-    align-items: center;
-
-  img{
-    width: 25px;
-    margin: 0 5px
-  }
-}
-
 
 </style>
