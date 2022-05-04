@@ -45,10 +45,19 @@ li{
   padding: 1rem;
   font-weight: 700;
   font-size: 11px;
+  padding-bottom: 37px;
+  
+
+  &:hover{
+    border-bottom: 5px solid #0282F9;
+    color: #0282F9;
+    
+  }
 }
 
 .active{
   color: #0282F9;
+  border-bottom: 5px solid #0282F9;
 
 }
 

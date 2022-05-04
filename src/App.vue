@@ -2,7 +2,8 @@
   <div id="app">
     <headerComponent />
     <main>
-      content here
+      <main-component />
+      
     </main>
 
     <buySectionComponent />
@@ -17,9 +18,9 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import headerComponent from './components/Header.vue'
 import buySectionComponent from './components/BuySection.vue'
+import mainComponent from './components/MainComponent.vue'
 import footerTopComponent from './components/FooterTop.vue'
 import footerBottomComponent from './components/FooterBottom.vue'
 export default {
@@ -27,6 +28,7 @@ export default {
   components: {
     headerComponent,
     buySectionComponent,
+    mainComponent,
     footerTopComponent,
     footerBottomComponent,
 
@@ -66,7 +68,12 @@ export default {
 
 .row{
   display: flex;
+  flex-wrap: wrap;
 }
+
+// .col-6{
+//   width: calc(100% / 12) * 2;
+// }
 
 .flex_between{
   justify-content: space-between;
@@ -76,10 +83,11 @@ export default {
 
 main{
   width: 100%;
-  background-color: black;
+  background-color: #1C1C1C;
   min-height: 100px;
   color: white;
-  flex: 1
+  flex: 1;
+  position: relative;
 }
 
 </style>
