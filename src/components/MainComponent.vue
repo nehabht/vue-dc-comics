@@ -3,7 +3,7 @@
         <div class="jumbo"></div>
 
         <div class="container80">
-            <div class="btn">
+            <div class="">
                 <button class="btn_current">CURRENT SERIES</button>
             </div>
             <div class="row covers">
@@ -115,6 +115,7 @@ export default {
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 .covers{
     margin-top: 3rem
@@ -139,7 +140,11 @@ export default {
     
     }
 
-    .btn_current{
+    
+
+}
+
+.btn_current{
         background-color: #0282F9;
         color:white;
         background-color: #0282F9;
@@ -148,11 +153,10 @@ export default {
         font-weight: bold;
         font-size: 20px;
         margin-bottom: 1rem;
-        position: absolute;
-        top: 35%;
-        left: 10%
-    }
+        margin-top: -10px;
+        position: relative;
+        z-index: 1000;
 
-}
+    }
 
 </style>
